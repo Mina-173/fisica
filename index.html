@@ -1,96 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="es">  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisica y simulación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Mantenemos tus colores base tal como los elegiste */
+        body {
+            background-color: rgb(188, 218, 181);
+        }
+        .header-principal {
+            background-color: rgb(245, 78, 181);
+            color: white;
+            border-radius: 12px;
+        }
+        .subheader-principal {
+            background-color: rgb(248, 176, 221);
+            color: #333;
+            border-radius: 8px;
+        }
+        /* Tarjetas estilizadas para los videos */
+        .video-card {
+            background-color: white;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-title {
+            background-color: rgb(248, 176, 221);
+            color: #222;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-  
+
+   <div class="container py-4">
     
-   <div class="container-fluid">
-    <h1 style="background-color: rgb(245, 78, 181); text-align: center; font-size: 300%;">
-    Portafolio de física y simulación
-</h1>
+    <!-- Encabezado principal -->
+    <header class="text-center mb-5">
+        <h1 class="header-principal p-4 fw-bold display-5 shadow-sm">
+            Portafolio de física y simulación
+        </h1>
+        <h2 class="subheader-principal p-2 d-inline-block px-4 shadow-sm">
+            ⭐By Carmina Esqueda⭐
+        </h2>
+    </header>
 
-<h2 style="background-color: rgb(248, 176, 221); text-align: center;">
-    ⭐By Carmina Esqueda⭐
-</h2>
+    <!-- Contenedor de la cuadrícula (Grid de Bootstrap) -->
+    <div class="row g-4">
+
+        <!-- 1. Revelación de carro -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Revelación de carro</h2> 
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/6PO6wKPsnkM?si=K8Adg86QekByOvGT" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- 2. Bola de demolición -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Bola de demolición</h2> 
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/wC2NM5JFbZI?si=-WDlnUrzOtiX5eXh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
    
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Revelación de carro</h2> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PO6wKPsnkM?si=K8Adg86QekByOvGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 3. Columpio -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Columpio</h2> 
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/3E6AOdwSg-I?si=K8Tsl9rHGnOIfRFh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-</section>
+        <!-- 4. Caida libre -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Caida libre</h2> 
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/xONvaJm1Tv0?si=RaPZZRU8Qo0R_ebX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Bola de demolición</h2> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wC2NM5JFbZI?si=-WDlnUrzOtiX5eXh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 5. Domino -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Domino</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/C0rC6Wc6LpA?si=GszNjo0eqoza6ggr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-</section>
-   
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Columpio</h2> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3E6AOdwSg-I?si=K8Tsl9rHGnOIfRFh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 6. Puertas -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Puertas</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/luRlxzICGEo?si=lR_yJ8AhyPcTSKQ-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-</section>
+        <!-- 7. Demolición Basica -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Demolición Basica</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/WaLmp-PjxqM?si=Vvt4cF3IRnUHhEu5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Caida libre</h2> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xONvaJm1Tv0?si=RaPZZRU8Qo0R_ebX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 8. SoftBody -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` SoftBody</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/zH4zZu7EAEo?si=NqepZSXi3brxjZ8n" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-</section>
+        <!-- 9. Bolita magica -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Bolita magica</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/gMOIVeWkLQw?si=_4ujG4V_VUu1YFyA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Domino</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/C0rC6Wc6LpA?si=GszNjo0eqoza6ggr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 10. Bandera -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Bandera</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/1RPOv4-m3bM?si=wz48eURFCbLAW5fH" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-</section>
+        <!-- 11. Hot-cakes -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Hot-cakes</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/D7480Y4TWLk?si=M3KIpCtGnv-eTTTf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Puertas</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/luRlxzICGEo?si=lR_yJ8AhyPcTSKQ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- 12. Boliche -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Boliche</h2> 
+                <div class="ratio ratio-16x9">
+                   <iframe src="https://www.youtube.com/embed/64w3Hzex4Xc?si=HLt7O28eC-rW2Bsl" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-</section>
+        <!-- 13. Particulas -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <section class="card h-100 video-card shadow-sm">
+                <h2 class="video-title p-3 text-center">String.raw`⚪` Particulas</h2> 
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/908eGGT36vg?si=ppflunyEgslmB86G" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Demolición Basica</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/WaLmp-PjxqM?si=Vvt4cF3IRnUHhEu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> <!-- Fin del Row -->
+ </div> <!-- Fin del Container -->
 
-</section>
-
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪SoftBody</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/zH4zZu7EAEo?si=NqepZSXi3brxjZ8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</section>
-
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Bolita magica</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/gMOIVeWkLQw?si=_4ujG4V_VUu1YFyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</section>
-
-
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Bandera</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/1RPOv4-m3bM?si=wz48eURFCbLAW5fH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</section>
-
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Hot-cakes</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/D7480Y4TWLk?si=M3KIpCtGnv-eTTTf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</section>
-
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Boliche</h2> 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/64w3Hzex4Xc?si=HLt7O28eC-rW2Bsl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</section>
-
-
-<section><h2 style="background-color:rgb(248, 176, 221);">⚪Particulas</h2> 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/908eGGT36vg?si=ppflunyEgslmB86G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</section>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-   <body style="background-color:rgb(188, 218, 181);">
-
-
- </div>
+ <!-- Bootstrap JS Bundle -->
+ script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
